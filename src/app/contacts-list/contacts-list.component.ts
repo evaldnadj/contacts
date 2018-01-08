@@ -25,13 +25,20 @@ export class ContactsListComponent implements OnInit {
         firstName: "Martin",
         lastName:  "Hess",
         email:     "martin@example.com"
-      }
+      },
       {
         firstName: "Martin",
         lastName:  "Hessa",
         email:     "martin@example.com"
       }
     ]};
+
+  removeContact(contact) {
+    let index = this.contacts.indexOf(contact);
+    this.contacts.splice(index, 1);
+    //console.log(contact);
+  }
+    
   ngOnInit() {
   }
 
