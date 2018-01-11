@@ -29,5 +29,9 @@ export class ContactsService
    lastName:  "Hessa",
    email:     "martin@example.com"
  }];
+}
+  
+  getMessages(){
+    return "Hello";
   }
 }
