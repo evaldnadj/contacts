@@ -10,6 +10,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { ContactsService } from './services/contacts.service';
 
 
 const appRoutes: Routes = [
@@ -33,7 +34,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ ContactsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
